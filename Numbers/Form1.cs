@@ -25,8 +25,48 @@ namespace Numbers
             richTextBox1.AppendText(d1.ToString("0.0E0") + "\n");
             richTextBox1.AppendText(d1.ToString("0.00E00") + "\n");
 
+            double pi = 3.141592653589793;
+            richTextBox1.AppendText(pi.ToString("N3") + "\n");
+            richTextBox1.AppendText(pi.ToString("N5") + "\n");
+            richTextBox1.AppendText(pi.ToString("N15") + "\n");
 
+            double c = 299792458;
+            richTextBox1.AppendText(c.ToString("N") + "\n");
+            richTextBox1.AppendText(c.ToString("N0") + "\n");
+            richTextBox1.AppendText(c.ToString("0.00000000E16") + "\n");
+            richTextBox1.AppendText(c.ToString("0.00E0") + "\n");
 
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an interger");
+            }
+            string s2 = "3.2";
+            try
+            {
+                int i2 = int.Parse(s2);
+            }
+
+            catch
+            {
+                MessageBox.Show(s2 = " is not an interger");
+            }
+
+            String s3 = "pi";
+            try
+            {
+                double d2 = double.Parse(s3);
+            }
+
+            catch
+            {
+                double d2 = 0;
+
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
