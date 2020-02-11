@@ -26,6 +26,7 @@ namespace Numbers
             richTextBox1.AppendText(d1.ToString("0.00E00") + "\n");
 
 
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
